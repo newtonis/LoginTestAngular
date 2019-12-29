@@ -6,8 +6,33 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDBOnrSj5XYLAdoNad3TfAsOk6sON3jjGU",
+      authDomain: "testlogin-97e9b.firebaseapp.com",
+      databaseURL: "https://testlogin-97e9b.firebaseio.com",
+      projectId: "testlogin-97e9b",
+      storageBucket: "testlogin-97e9b.appspot.com",
+      messagingSenderId: "653977420637",
+      appId: "1:653977420637:web:8ca75429d3d1b77d3bdeb4",
+      measurementId: "G-TZH6DMT1VQ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 </head>
 <body>
+  
+
   <app-root></app-root>
 </body>
 </html>

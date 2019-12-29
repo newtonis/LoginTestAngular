@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GoogleLoginProvider, FacebookLoginProvider } from "angularx-social-login";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'login-test';
+  constructor() { }
+  ngOnInit() {
+    console.log("config ...");
+    console.log(GoogleLoginProvider.PROVIDER_ID);
+    console.log("config ...");
+  }
 }
